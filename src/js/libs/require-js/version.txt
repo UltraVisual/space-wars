@@ -1,3 +1,0 @@
-#Fri, 04 Jan 2013 10:50:40 +0000
-
-version=2.1.2-SNAPSHOT
