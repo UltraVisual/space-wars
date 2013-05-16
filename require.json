@@ -1,0 +1,16 @@
+{
+    "baseUrl":"src/js/",
+    "waitSeconds":7,
+    "optimize":"uglify",
+    "optimizeCss":"none",
+    "useSourceUrl":false,
+    "out":"./build/js/march-1gam-min.js",
+    "name":"march-1gam",
+    "inlineText":true,
+    "inlineJSON":true,
+    "preserveLicenseComments":false,
+
+    "paths":{
+        "phaser":"libs/phaser/build/phaser-095-amd"
+    }
+}
