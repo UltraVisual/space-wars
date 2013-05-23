@@ -22,7 +22,7 @@
         <key>dataFormat</key>
         <string>json-array</string>
         <key>textureFileName</key>
-        <filename>../../src/media/ship-sprites.png</filename>
+        <filename>../../src/media/game-sprites.png</filename>
         <key>flipPVR</key>
         <false/>
         <key>ditherType</key>
@@ -111,7 +111,7 @@
             <enum type="AndEngine::MagFilter">MagLinear</enum>
         </struct>
         <key>dataFileName</key>
-        <filename>../../src/media/ship-sprites.json</filename>
+        <filename>../../src/media/game-sprites.json</filename>
         <key>mainExtension</key>
         <string></string>
         <key>forceIdenticalLayout</key>
@@ -177,6 +177,37 @@
             <filename>0029.png</filename>
             <filename>../bullet.png</filename>
             <filename>../minion.png</filename>
+            <filename>../../../../../../../../tmp/0030.png</filename>
+            <filename>../../../../../../../../tmp/0031.png</filename>
+            <filename>../../../../../../../../tmp/0032.png</filename>
+            <filename>../../../../../../../../tmp/0033.png</filename>
+            <filename>../../../../../../../../tmp/0034.png</filename>
+            <filename>../../../../../../../../tmp/0035.png</filename>
+            <filename>../../../../../../../../tmp/0036.png</filename>
+            <filename>../../../../../../../../tmp/0037.png</filename>
+            <filename>../../../../../../../../tmp/0038.png</filename>
+            <filename>../../../../../../../../tmp/0039.png</filename>
+            <filename>../../../../../../../../tmp/0040.png</filename>
+            <filename>../../../../../../../../tmp/0041.png</filename>
+            <filename>../../../../../../../../tmp/0042.png</filename>
+            <filename>../../../../../../../../tmp/0043.png</filename>
+            <filename>../../../../../../../../tmp/0044.png</filename>
+            <filename>../../../../../../../../tmp/0045.png</filename>
+            <filename>../../../../../../../../tmp/0046.png</filename>
+            <filename>../../../../../../../../tmp/0047.png</filename>
+            <filename>../../../../../../../../tmp/0048.png</filename>
+            <filename>../../../../../../../../tmp/0049.png</filename>
+            <filename>../../../../../../../../tmp/0050.png</filename>
+            <filename>../../../../../../../../tmp/0051.png</filename>
+            <filename>../../../../../../../../tmp/0052.png</filename>
+            <filename>../../../../../../../../tmp/0053.png</filename>
+            <filename>../../../../../../../../tmp/0054.png</filename>
+            <filename>../../../../../../../../tmp/0055.png</filename>
+            <filename>../../../../../../../../tmp/0056.png</filename>
+            <filename>../../../../../../../../tmp/0057.png</filename>
+            <filename>../../../../../../../../tmp/0058.png</filename>
+            <filename>../../../../../../../../tmp/0059.png</filename>
+            <filename>../../../../../../../../tmp/0060.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

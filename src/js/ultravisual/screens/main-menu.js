@@ -11,12 +11,10 @@ define(["ultravisual/levels/level-one"], function (LevelOne) {
             game.loader.load();
         },
         create: function () {
-            var createSprite = game.createSprite(800, 480, 'main-title');
-            console.log("Shane: main-menu.js :: create :: createSprite", createSprite);
+            game.createSprite(0, 0, 'main-title');
         },
         update: function () {
-            if (game.input.mouse.isDown && hasClicked == false){
-                console.log("Shane: main-menu.js :: update :: hasClicked", hasClicked);
+            if (game.input.mouse.isDown && hasClicked === false){
                 hasClicked = true;
                 game.switchState(LevelOne)
             }

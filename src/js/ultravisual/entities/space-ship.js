@@ -1,6 +1,6 @@
-define(["phaser"], function (Phaser) {
+define(["phaser", "ultravisual/geom/vector2d"], function (Phaser, Vector2D) {
 
-    var game, graphics, fire = false, bulletGroup = null, shotDelayTime = 0, shotDelay = 50,
+    var game, graphics, fire = false, bulletGroup = null, shotDelayTime = 0, shotDelay = 90,
         frames = ['0001.png', '0002.png', '0003.png', '0004.png', '0005.png', '0006.png', '0007.png', '0008.png', '0009.png', '0010.png', '0011.png', '0012.png', '0013.png', '0014.png',
         '0015.png', '0016.png', '0017.png', '0018.png', '0019.png', '0020.png', '0021.png', '0022.png', '0023.png', '0024.png', '0025.png', '0026.png', '0027.png', '0028.png', '0029.png'];
     ;
@@ -9,7 +9,7 @@ define(["phaser"], function (Phaser) {
         bulletGroup = game.createGroup(10);
         var bullet = bulletGroup.recycle(Phaser.Sprite);
         bullet.exists = true;
-        bullet.x = graphics.x + (graphics.width * 0.5);
+        bullet.x = graphics.x + graphics.width + 5;
         bullet.y = graphics.y + 25;
         bullet.velocity.x = 600;
         bullet.loadGraphic("entities");
@@ -18,7 +18,8 @@ define(["phaser"], function (Phaser) {
 
     var SpaceShip = function (_game) {
         game = _game;
-        graphics = game.createSprite(game.stage.width * .5 - 50, 200, "entities")
+        graphics = game.createSprite(game.stage.width * .5 - 50, 200, "entities");
+        this.create();
     };
 
     SpaceShip.prototype = {
@@ -66,6 +67,12 @@ define(["phaser"], function (Phaser) {
                     shotDelayTime = 0;
                 }
             }
+        },
+        getPosition:function(){
+            return new Vector2D(graphics.x, graphics.y)
+        },
+        getVelocity:function(){
+            return new Vector2D(graphics.acceleration.x, graphics.acceleration.y);
         }
     }
 
